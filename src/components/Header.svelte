@@ -32,11 +32,12 @@
         align-items: center;
     }
 
+    /* not the best way for bg image - look into this */
     .tattle-logo {
         width: 80px;
         height: 18px;
         margin-right: 10px;
-        background-image: url('/img/tattle-logo.png');
+        background-image: url('http://andyknoll.com/tattle/svelte-phonecat/img/tattle-logo.png');
         background-repeat: no-repeat;
         background-size: contain;
     }
