@@ -6,7 +6,7 @@ import PhoneAppServices from './PhoneAppServices';
 
 class PhoneApp {
     constructor(ui) {
-        this.name = 'Svelte Phones Demo';
+        this.name = 'Svelte Ancient Phones Demo';
         this.author = 'Andy Knoll - June 2021';
 
         this.models = new PhoneAppModels(this);

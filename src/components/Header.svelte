@@ -34,7 +34,7 @@
 
     .tattle-logo {
         width: 80px;
-        height: 24px;
+        height: 18px;
         margin-right: 10px;
         background-image: url('/img/tattle-logo.png');
         background-repeat: no-repeat;
@@ -44,9 +44,9 @@
     h1 {
         height: 40px;
         margin: 0px 10px 0px 0px;
-        font-size: 1.8em;
+        font-size: 1.7em;
         font-weight: 400;
-        text-shadow: 1px 1px 2px #222222;
+        /* text-shadow: 1px 1px 2px #222222; */
     }
 
     p {
