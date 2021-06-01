@@ -1,13 +1,17 @@
 // main.js
 
 import App from './components/App.svelte';
-import JSApp from './app/JSApp';
+import PhoneApp from './app/PhoneApp';
 
-// this is the Svelte <App> component
+// this is the Svelte <App> root component
 const root = new App({
 	target: document.body
 });
+console.log("created Svelte root component");
+console.log(root);
 
 // this is the JS app object - pass UI root comp
-const jsApp = new JSApp(root);
-jsApp.init();
+const app = new PhoneApp(root);
+app.init();
+console.log("created JS PhoneApp");
+console.log(app);

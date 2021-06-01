@@ -1,8 +1,10 @@
 <script>
-    // import { flip } from 'svelte/animate';   // for animations
+    // import { flip } from 'svelte/animate';   // TODO: for animations
 	export let app;                             // the only prop passsed in
     const phone = app.models.phoneDetail;
-    $: imgSrc = phone.images[0];                // no need for onThumbClick
+    
+    // $: imgSrc = phone.images[0];
+    let imgSrc = phone.images[0];
 
     const onBackClick = () => {
         app.views.setCurrentView(0);
@@ -10,7 +12,6 @@
 
 </script>
 
-<!-- the HRML/CSS for each individual phone detail -->
 <div class="phone-detail-page">
     <div class="phone-detail-row">
         <div class="phone-image">
@@ -64,7 +65,6 @@
 
 
 <style>
-
     .phone-detail-page {
         position: relative;
         top: 70px;
@@ -86,7 +86,6 @@
         width: 400px;
         animation-name: zoomImg;
         animation-duration: .3s;
-        /* border: 1px solid green; */
     }
 
     .phone-text {
@@ -96,7 +95,6 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        /* border: 1px solid green; */
     }
 
     .phone-thumbs img {
@@ -125,20 +123,18 @@
         border-radius: 50%;
     }
 
-    /* SPECS */
+    /* SPECS - did not include all from JSON */
 
     .phone-specs-row {
         width: 100%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        /* border: 1px solid gray; */
     }
     
     .spec-block {
         min-width: 290px;
         min-height: 200px;
-        /* border: 1px solid red; */
     }
     
     @keyframes zoomIn {

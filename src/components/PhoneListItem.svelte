@@ -8,7 +8,6 @@
 
 </script>
 
-<!-- the HRML/CSS for each individual phone item -->
 <div>
     <div class="phone-item">
         <div class="phone-thumb">
@@ -32,12 +31,10 @@
         animation-name: growHeight;
         animation-duration: .3s;
         overflow: hidden;
-        /* border: 1px solid gray; */
     }
 
     .phone-thumb img {
         height: 110px;
-        /* border: 1px solid gray; */
     }
 
     .phone-text {
@@ -46,14 +43,12 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        /* border: 1px solid gray; */
     }
 
     .phone-name {
         font-size: 1.2em;
         font-weight: 600;
         color: #337ab7;
-        /* margin-top: 20px; */
     }
 
     .phone-descr {

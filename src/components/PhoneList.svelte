@@ -1,15 +1,14 @@
 <script>
     import PhoneSearchBox from './PhoneSearchBox.svelte';
     import PhoneListItem from './PhoneListItem.svelte';
-	export let app;         // external prop
-    $: phones = app.models.phones;
+	export let app;
+    $: phones = app.models.phones;      // reactive array
 </script>
 
 <style>
     .phone-list {
         position: relative;
         top: 140px;
-        /* border: 1px solid green; */
     }
 
 </style>

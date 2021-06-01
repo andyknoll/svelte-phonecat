@@ -9,8 +9,8 @@ class PhoneAppModels {
 
     // .name .age etc
     sortPhonesByProp(prop) {
-        console.log('sortPhonesByProp: ' + prop);
         this.phones.sort((a, b) => {
+            // name sorts were not working without doing this!
             if (a[prop] > b[prop]) return 1;
             if (a[prop] < b[prop]) return -1;            
         });

@@ -13,7 +13,7 @@
 
 </script>
 
-
+<!-- ignore the warning about the <select> change event (Stack Overflow)-->
 <div class="phone-search-box">
     <div class="field-pair">
         <div class="field-name">Filter by:</div> 
@@ -38,7 +38,6 @@
         padding: 20px 0px 15px 0px;
         background-color: #ffffff;
         display: flex;
-        /* border-bottom: 1px solid gray; */
     }
 
     .field-pair {
@@ -63,6 +62,3 @@
     }
 
 </style>
-
-
-

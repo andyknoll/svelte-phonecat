@@ -16,7 +16,6 @@ class PhoneAppViews {
     }
 
     setCurrentView(viewId) {
-        console.log('setCurrentView: ' + viewId);
         this.currentView = viewId;
         this.refreshViews();
     }

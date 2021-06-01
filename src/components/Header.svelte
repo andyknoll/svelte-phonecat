@@ -16,7 +16,6 @@
         height: 50px;
 		width: 1200px;
 		max-width: 1200px;
-        /* padding: 0px 10px; */
         margin: 0px 0px 20px 0px;
         display: flex;
         align-items: center;
@@ -25,7 +24,6 @@
         background-color: #f4f5f7;
         z-index: 100;
         border-bottom: 1px solid #337ab7;
-        /* box-shadow: 0px 1px 5px #337ab7; */
     }
 
     .logo-title {
@@ -36,12 +34,11 @@
 
     .tattle-logo {
         width: 80px;
-        height: 30px;
+        height: 24px;
         margin-right: 10px;
         background-image: url('/img/tattle-logo.png');
         background-repeat: no-repeat;
         background-size: contain;
-        /* border: 1px solid red; */
     }
 
     h1 {
@@ -50,7 +47,6 @@
         font-size: 1.8em;
         font-weight: 400;
         text-shadow: 1px 1px 2px #222222;
-        /* border: 1px solid red; */
     }
 
     p {

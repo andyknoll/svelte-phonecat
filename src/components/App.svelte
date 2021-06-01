@@ -18,7 +18,6 @@
 		max-width: 1200px;
 		margin: auto;
 		user-select: none;
-		/* border: 2px solid red; */
 	}
 </style>
 

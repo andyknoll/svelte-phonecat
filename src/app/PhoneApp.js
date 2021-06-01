@@ -1,10 +1,10 @@
-// JSApp.js
+// PhoneApp.js
 
 import PhoneAppModels from './PhoneAppModels';
 import PhoneAppViews from './PhoneAppViews';
 import PhoneAppServices from './PhoneAppServices';
 
-class JSApp {
+class PhoneApp {
     constructor(ui) {
         this.name = 'Svelte Phones Demo';
         this.author = 'Andy Knoll - June 2021';
@@ -14,17 +14,15 @@ class JSApp {
         this.services = new PhoneAppServices(this);
     }
 
-    // called after creating in main.js
+    // called manually after creating in main.js
     init() {
         this.services.fetchPhones();
-        //this.services.fetchPhoneDetail('motorola-xoom-with-wi-fi');
     }
 
     refreshViews() {
         this.views.refreshViews();
     }
 
-
 }
 
-export default JSApp;
+export default PhoneApp;
